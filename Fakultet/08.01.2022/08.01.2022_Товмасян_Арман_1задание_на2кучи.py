@@ -1,3 +1,7 @@
+# №3
+# 3 - 21
+# 4 - 20
+# 5 - 32
 from functools import lru_cache
 
 # +1, +h[0v1]
@@ -24,6 +28,6 @@ def game(h):
         return "B2"
 
 
-for s in range(68):
+for s in range(1, 68):
     if game((7, s)) is not None:
         print(s, game((7, s)))
