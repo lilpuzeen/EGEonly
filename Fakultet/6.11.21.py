@@ -1,118 +1,118 @@
-##x = int(input("vvedite x = "))
+##y = int(input("vvedite y = "))
 ##L = 0
-##while x > 0:
+##while y > 0:
 ##        L += 1
-##        n = x % 10
-##        x = x //10
+##        n = y % 10
+##        y = y //10
 ##print(L)
 
 
-##x = int(input())
+##y = int(input())
 ##L = 0
 ##M = 0
-##while x > 0:
+##while y > 0:
 ##        L += 1     ## L = L + 1
-##        if x % 2 == 0:
-##                M = M + (x % 10) // 2
-##        x = x // 10
+##        if y % 2 == 0:
+##                M = M + (y % 10) // 2
+##        y = y // 10
 ##print(L)
 ##print(M)
 
 
-##x = int(input())
+##y = int(input())
 ##S = 0
-##while x > 0:
-##        n = x % 10
+##while y > 0:
+##        n = y % 10
 ##        if n % 2 == 0:      
 ##                S = S + n
-##        x = x //10  
+##        y = y //10
 ##print(S)
 
 
-##x = int(input())
+##y = int(input())
 ##Max = -1000000000
-##while x > 0:
-##        n = x % 10
+##while y > 0:
+##        n = y % 10
 ##        if n > Max:
 ##                Max = n
-##        x = x //10  
+##        y = y //10
 ##print(Max)
 
 
-##x = int(input())
+##y = int(input())
 ##k =0
-##while x > 0:
-##        n = x % 10
+##while y > 0:
+##        n = y % 10
 ##        if n%2 == 0:
 ##                k = k +1
-##        x = x //10  
+##        y = y //10
 ##print(k)
 
-##x = int(input())
+##y = int(input())
 ##p = 1
-##while x > 0:
-##        n = x % 10
+##while y > 0:
+##        n = y % 10
 ##        if n % 3 != 0:
 ##                p = p * n
-##        x = x //10  
+##        y = y //10
 ##print(p)
 
 ##################################30.10.21######################################
 
-##x = 49**10+7**30-49
+##y = 49**10+7**30-49
 ##k = 0
-##while x > 0:
-##    n = x % 7
+##while y > 0:
+##    n = y % 7
 ##    if n == 6:
 ##        k = k + 1
-##    x = x // 7
+##    y = y // 7
 ##print(k)
 
 
-##x = int(input())
-##for i in range(1, x + 1): ## генератор возможных делителей числа х
-##    if x % i == 0: ## проверка явл. ли i дел х
+##y = int(input())
+##for i in range(1, y + 1): ## генератор возможных делителей числа х
+##    if y % i == 0: ## проверка явл. ли i дел х
 ##        print(i)
 
-##x = int(input())
-##for i in range(2, x): ## генератор возможных делителей числа х
-##    if x % i == 0: ## проверка явл. ли i дел х
+##y = int(input())
+##for i in range(2, y): ## генератор возможных делителей числа х
+##    if y % i == 0: ## проверка явл. ли i дел х
 ##        print(i)
 
 
-##for x in range(10, 50 + 1):
-##    print("делители числа ", x)
-##    for i in range(2, x): ## генератор возможных делителей числа х
-##        if x % i == 0: ## проверка явл. ли i дел х
+##for y in range(10, 50 + 1):
+##    print("делители числа ", y)
+##    for i in range(2, y): ## генератор возможных делителей числа х
+##        if y % i == 0: ## проверка явл. ли i дел х
 ##            print(i)
 
 
-##x = int(input())
+##y = int(input())
 ##k = 0
-##for i in range(2, x): ## генератор возможных делителей числа х
-##    if x % i == 0: ## проверка явл. ли i дел х
+##for i in range(2, y): ## генератор возможных делителей числа х
+##    if y % i == 0: ## проверка явл. ли i дел х
 ##        k = k + 1
 ########## поиск делителей завершен
 ##print(k)
 
 
-##for x in range(10, 50 + 1):
+##for y in range(10, 50 + 1):
 ##    k = 0
-##    for i in range(2, x): ## генератор возможных делителей числа х
-##        if x % i == 0: ## проверка явл. ли i дел х
+##    for i in range(2, y): ## генератор возможных делителей числа х
+##        if y % i == 0: ## проверка явл. ли i дел х
 ##            k = k + 1
 ##    ########## поиск делителей для числа х завершен
 ##    if k == 2:
-##        print(x)
+##        print(y)
 
 
 
-##for x in range(10, 50 + 1):
+##for y in range(10, 50 + 1):
 ##    k = 0
 ##    del1 = 0
 ##    del2 = 0
-##    for i in range(2, x): ## генератор возможных делителей числа х
-##        if x % i == 0: ## проверка явл. ли i дел х
+##    for i in range(2, y): ## генератор возможных делителей числа х
+##        if y % i == 0: ## проверка явл. ли i дел х
 ##            k = k + 1
 ##            if k == 1:
 ##                del1 = i
@@ -120,15 +120,15 @@
 ##                del2 = i
 ##    ########## поиск делителей для числа х завершен
 ##    if k == 2:
-##        print(x,del1, del2)
+##        print(y,del1, del2)
 
 
-##for x in range(174457, 174505 + 1):
+##for y in range(174457, 174505 + 1):
 ##    k = 0
 ##    del1 = 0
 ##    del2 = 0
-##    for i in range(2, x): ## генератор возможных делителей числа х
-##        if x % i == 0: ## проверка явл. ли i дел х
+##    for i in range(2, y): ## генератор возможных делителей числа х
+##        if y % i == 0: ## проверка явл. ли i дел х
 ##            k = k + 1
 ##            if k == 1:
 ##                del1 = i
@@ -136,7 +136,7 @@
 ##                del2 = i
 ##    ########## поиск делителей для числа х завершен
 ##    if k == 2:
-##        print(x,del1, del2)
+##        print(y,del1, del2)
 
 
 
@@ -145,12 +145,12 @@
 
 ###### 2х = 64
 
-##for x in range(1,100):
-##    if 2*x == 64:
-##        print(x)
+##for y in range(1,100):
+##    if 2*y == 64:
+##        print(y)
 
-##for x in range(1,10000):
-##    print(x)
+##for y in range(1,10000):
+##    print(y)
 
 
 ##Определите, при каком наибольшем введённом значении переменной s программа
@@ -167,16 +167,16 @@
 
 
     
-##for x in range(1,10000):
+##for y in range(1,10000):
 ##    ##s = int(input())
-##    s = x
+##    s = y
 ##    s = s // 10
 ##    n = 1
 ##    while s < 51:
 ##        s = s + 5
 ##        n = n * 2
 ##    if n == 64:
-##        print(x)
+##        print(y)
 
 
 
@@ -197,15 +197,15 @@
 ##    n = n // 2
 ##print(n)
 
-# for x in range(100):
+# for y in range(100):
 #         for y in range(100):
-#             print(x,y)
+#             print(y,y)
 
 # for a in range(100):
 #     flag = True
-#     for x in range(100):
+#     for y in range(100):
 #         for y in range(100):
-#             if ((y + 2*x != 48) or (a < x) or (x < y)) == False:
+#             if ((y + 2*y != 48) or (a < y) or (y < y)) == False:
 #                 flag = False
 #     if flag == True:
 #         print(a)
@@ -231,6 +231,6 @@ for x in range(1, 100):
 
 ###### 2х = 64
 
-##for x in range(1,100):
-##    if 2*x == 64:
-##        print(x)
+##for y in range(1,100):
+##    if 2*y == 64:
+##        print(y)

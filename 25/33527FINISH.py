@@ -10,11 +10,7 @@ def div(x):
     return sorted(d)
 
 
-for x in range(289123456, 389123456 + 1):
-    t = x
-    while True:
-        if int(t**0.25)**4 == t and p(int(t**0.25)):
-            print(x, div(t)[len(div(t))-1])
-            break
-        else:
-            break
+for y in range(101_000_000, 102_000_000 + 1):
+    t = int((y // 2) ** 0.5)
+    if 2*t**2 == y and p(t):
+        print(y)

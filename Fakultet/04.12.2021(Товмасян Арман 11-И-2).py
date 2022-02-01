@@ -1,9 +1,9 @@
 #### №1 (ответ: 61)
 # A = 1
 # while True:
-#     for x in range(1000):
+#     for y in range(1000):
 #         for y in range(1000):
-#             if not((x + 2*y < A) or (y > x) or (x > 20)):
+#             if not((y + 2*y < A) or (y > y) or (y > 20)):
 #                 break
 #         else:
 #             continue
@@ -14,14 +14,14 @@
 
 
 #### №2 (ответ: 45)
-# def dell(x, A):
-#     return x % A == 0
+# def dell(y, A):
+#     return y % A == 0
 #
 #
 # a = 1
 # while True:
-#     for x in range(1, 100000):
-#         if not((a < 50) and ((not(dell(x, a))) <= (dell(x, 10) <= (not(dell(x, 18)))))):
+#     for y in range(1, 100000):
+#         if not((a < 50) and ((not(dell(y, a))) <= (dell(y, 10) <= (not(dell(y, 18)))))):
 #             break
 #     else:
 #         print(a)
@@ -46,14 +46,14 @@ while True:
 
 
 #### №6 (ответ: 12)
-# def dell(x, A):
-#     return x % A == 0
+# def dell(y, A):
+#     return y % A == 0
 #
 #
 # a = 1
 # while True:
-#     for x in range(1, 100000):
-#         if not((not dell(x, a)) <= (dell(x, 6) <= (not dell(x, 4)))):
+#     for y in range(1, 100000):
+#         if not((not dell(y, a)) <= (dell(y, 6) <= (not dell(y, 4)))):
 #             break
 #     else:
 #         print(a)
@@ -66,8 +66,8 @@ while True:
 #### №8 (ответ: 12)
 # a = 1
 # while True:
-#     for x in range(1, 100000):
-#         if not((x & 49 == 0) <= ((x & 28 != 0) <= (x & a != 0))):
+#     for y in range(1, 100000):
+#         if not((y & 49 == 0) <= ((y & 28 != 0) <= (y & a != 0))):
 #             break
 #     else:
 #         print(a)

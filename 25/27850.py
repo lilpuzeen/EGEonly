@@ -1,18 +1,8 @@
-from typing import List
-
-
-def isPrime(arr: List):
-    empty = []
-    for item in arr:
-        k = 0
-        for j in range(1, item+1):
-            if item % j == 0:
-                k += 1
-        if k == 2:
-            empty.append((arr.index(item) + 1, item))
-    return empty
+def p(x):
+    return x > 1 and all(x%i!=0 for i in range(2, int(x**0.5)+1))
 
 
 if __name__ == '__main__':
-    x = [int(x) for x in range(245690, 245756 + 1)]
-    print(isPrime(x))
+    for i in range(245690, 245756+1):
+        if p(i):
+            print(i - 245690 + 1, i)

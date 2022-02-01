@@ -1,33 +1,33 @@
 # 1  # ответ yzwx
-# ((x ∧ w) ∨ (w ∧ z)) ≡ ((z → y) ∧ (y → x))
-# print("x y z w")
-# for x in range(2):
+# ((y ∧ w) ∨ (w ∧ z)) ≡ ((z → y) ∧ (y → y))
+# print("y y z w")
+# for y in range(2):
 #     for y in range(2):
 #         for z in range(2):
 #             for w in range(2):
-#                 if ((x and w) or (w and z)) == ((z <= y) and (y <= x)):
-#                     print(x, y, z, w)
+#                 if ((y and w) or (w and z)) == ((z <= y) and (y <= y)):
+#                     print(y, y, z, w)
 
 
 # 2  # ответ: zyxw
-# # z ∧¬y ∧ (w → x)
-# print("x y z w")
-# for x in range(2):
+# # z ∧¬y ∧ (w → y)
+# print("y y z w")
+# for y in range(2):
 #     for y in range(2):
 #         for z in range(2):
 #             for w in range(2):
-#                 if (z and (not y)) and (w <= x):
-#                     print(x, y, z, w)
+#                 if (z and (not y)) and (w <= y):
+#                     print(y, y, z, w)
 
 
 # 3  # ответ: zyx
-# # (¬z)∧x ∨ x∧y.
-# print("x y z")
-# for x in range(2):
+# # (¬z)∧y ∨ y∧y.
+# print("y y z")
+# for y in range(2):
 #     for y in range(2):
 #         for z in range(2):
-#             if (not z) and x or (x and y):
-#                 print(x, y, z)
+#             if (not z) and y or (y and y):
+#                 print(y, y, z)
 
 
 # 4 ответ: 31 (на занятии решали)
@@ -36,13 +36,13 @@
 
 
 # # 8 ответ: 15
-# # (y + 2x ≠ 48) ∨ (A < x) ∨ (x < y)
+# # (y + 2x ≠ 48) ∨ (A < y) ∨ (y < y)
 # # наибольшего целого
 # A = 1
 # while True:
-#     for x in range(1000):
+#     for y in range(1000):
 #         for y in range(1000):
-#             if not((y + 2*x != 48) or (A < x) or (x < y)):
+#             if not((y + 2*y != 48) or (A < y) or (y < y)):
 #                 break
 #         else:
 #             continue
@@ -60,25 +60,25 @@
 # Q = [i / 10 for i in range(q1*10, q2*10 + 1)]
 #
 #
-# def f(x, A):
-#     return ((x in A) <= (x in P)) or (x in Q)
+# def f(y, A):
+#     return ((y in A) <= (y in P)) or (y in Q)
 #
 #
 # A = set([k / 10 for k in range(3 * 10, 23 * 10)])
-# for x in [k / 10 for k in range(3 * 10, 23 * 10)]:
-#     if not f(x, A):
-#         A.remove(x)
+# for y in [k / 10 for k in range(3 * 10, 23 * 10)]:
+#     if not f(y, A):
+#         A.remove(y)
 #
 # print(sorted(A))
 
 
 # # 10 хз почему не работает, но в файле кажется не пропечаталось лог. выражение до конца
-# # х&А → (x&10 = 0 → х&3)
+# # х&А → (y&10 = 0 → х&3)
 # # наибольшего целого числа А
 # A = 1
 # while True:
-#     for x in range(1, 100000):
-#         if not(x&A <= ((x&10 == 0) <= (x&3))):
+#     for y in range(1, 100000):
+#         if not(y&A <= ((y&10 == 0) <= (y&3))):
 #             break
 #     else:
 #         print(A)
@@ -87,20 +87,20 @@
 
 # 11 # ответ: 13
 # P = [10, 35] и Q = [17, 48].
-# ((x A) → ¬(x P)) → ((x A) → (x Q))
+# ((y A) → ¬(y P)) → ((y A) → (y Q))
 # наибольшую возможную длину отрезка A
 # p1, p2, q1, q2 = 10, 35, 17, 48
 # P = [i / 10 for i in range(p1*10, p2*10 + 1)]
 # Q = [i / 10 for i in range(q1*10, q2*10 + 1)]
 #
 #
-# def f(x, A):
-#     return (x in A) <= (not(x in P)) <= ((x in A) <= (x in Q))
+# def f(y, A):
+#     return (y in A) <= (not(y in P)) <= ((y in A) <= (y in Q))
 #
 #
 # A = set([k / 10 for k in range(10 * 10, 49 * 10)])
-# for x in [k / 10 for k in range(10 * 10, 49 * 10)]:
-#     if not f(x, A):
-#         A.remove(x)
+# for y in [k / 10 for k in range(10 * 10, 49 * 10)]:
+#     if not f(y, A):
+#         A.remove(y)
 #
 # print(sorted(A))

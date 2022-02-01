@@ -10,7 +10,7 @@ def div(x):
     return sorted(d)
 
 
-for x in range(289123456, 389123456 + 1):
+for x in range(123456789, 223456789+1):
     t = x
     while True:
         if int(t**0.25)**4 == t and p(int(t**0.25)):
