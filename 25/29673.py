@@ -9,12 +9,14 @@ def div(x):
             d |= {i, x//i}
     return sorted(d)
 
+#
+# for x in range(123456789, 223456789+1):
+#     t = x
+#     while True:
+#         if int(t**0.25)**4 == t and p(int(t**0.25)):
+#             print(x, div(t)[len(div(t))-1])
+#             break
+#         else:
+#             break
 
-for x in range(123456789, 223456789+1):
-    t = x
-    while True:
-        if int(t**0.25)**4 == t and p(int(t**0.25)):
-            print(x, div(t)[len(div(t))-1])
-            break
-        else:
-            break
+print(p(131))

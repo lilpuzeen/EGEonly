@@ -12,4 +12,7 @@ def printhi():
 
 
 if __name__ == '__main__':
-    printhi()
+    s = 0
+    for i in range(1, 100):
+        s += i**2
+    print(s)
