@@ -7,4 +7,4 @@ string = ["".join(words) for words in wordlist]
 
 string = list(filter(lambda x: x[0] != 'й' and x[5] != "й", string))
 
-print(len(string))
+prin ОГЗt(len(string))
