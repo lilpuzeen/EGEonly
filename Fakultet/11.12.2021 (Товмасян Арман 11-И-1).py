@@ -56,8 +56,8 @@
 # # ((х ∈ A) → (х ∈ Р)) ∨ (х ∈ Q)
 # # наибольшая
 # p1, p2, q1, q2 = 3, 13, 12, 22
-# P = [i / 10 for i in range(p1*10, p2*10 + 1)]
-# Q = [i / 10 for i in range(q1*10, q2*10 + 1)]
+# P = [x / 10 for x in range(p1*10, p2*10 + 1)]
+# Q = [x / 10 for x in range(q1*10, q2*10 + 1)]
 #
 #
 # def f(y, A):
@@ -90,8 +90,8 @@
 # ((y A) → ¬(y P)) → ((y A) → (y Q))
 # наибольшую возможную длину отрезка A
 # p1, p2, q1, q2 = 10, 35, 17, 48
-# P = [i / 10 for i in range(p1*10, p2*10 + 1)]
-# Q = [i / 10 for i in range(q1*10, q2*10 + 1)]
+# P = [x / 10 for x in range(p1*10, p2*10 + 1)]
+# Q = [x / 10 for x in range(q1*10, q2*10 + 1)]
 #
 #
 # def f(y, A):

@@ -115,4 +115,4 @@ class Wizard:
     #         if self.Age > other.Age:
     #             return True
     #         elif self.Age == other.Age:
-    #             for i in range(len(min(self.Name, other.Name))):
+    #             for x in range(len(min(self.Name, other.Name))):

@@ -6,6 +6,6 @@ def div(x):
     return sorted(d)
 
 
-for i in range(201455, 201470+1):
-    if len(div(i)) == 4:
-        print(*div(i))
+for x in range(201455, 201470 + 1):
+    if len(div(x)) == 4:
+        print(*div(x))

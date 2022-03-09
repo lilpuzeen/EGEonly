@@ -24,13 +24,13 @@
 # решал руками
 
 # №5 (ответ: 205)
-# for i in range(200, 1000):
-#     string = "1" * i
+# for x in range(200, 1000):
+#     string = "1" * x
 #     while ("111" in string) or ("222" in string):
 #         string = string.replace("111", "22", 1)
 #         string = string.replace("222", "1", 1)
 #     if string.count("1") == len(string):
-#         print(i, string)
+#         print(x, string)
 
 
 # №6 (ответ: 7)

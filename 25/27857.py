@@ -7,8 +7,8 @@ def div(x):
 
 
 # lens = []
-# for i in range(84052, 84130):
-#     lens.append((i, len(div(i))))
+# for x in range(84052, 84130):
+#     lens.append((x, len(div(x))))
 # print(*sorted(lens, key=lambda x: x[1])[len(lens)-1])
 #
 

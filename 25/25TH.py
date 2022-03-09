@@ -20,7 +20,7 @@ for i in line:
 pprint(divlist)
 
 
-# for i in line:
+# for x in line:
 #     for k in range(1, 245757):
 #         if len(memory) == 2:
 #             t = (tuple(memory[:]))
@@ -31,7 +31,7 @@ pprint(divlist)
 #                 pass
 #             memory = []
 #             break
-#         if i % k == 0:
+#         if x % k == 0:
 #             memory.append(k)
 #             continue
 
