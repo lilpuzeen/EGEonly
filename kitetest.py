@@ -1,11 +1,12 @@
-from itertools import product
+def dell(n, m):
+	return n % m == 0
 
-lets = ["А", "В", "Д", "П", "Р"]
 
-
-count = 1
-for item in product(lets, repeat=4):
-	s = "".join(item)
-	if s.count("А") == 0 and all(s.count(x) <= 1 for x in lets):
-		print(count, s)
-	count += 1
+a = 1
+while True:
+	for x in range(1, 1000):
+		if not((dell(x, 2) <= (not(dell(x, 5)))) or (x + a >= 90)):
+			break
+	else:
+		print(a)
+	a += 1
