@@ -11,3 +11,4 @@ while True:
     else:
         print(a)
     a += 1
+filter()
