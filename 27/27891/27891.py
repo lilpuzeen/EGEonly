@@ -1,12 +1,12 @@
 f = open("27891(B).txt")
+n = int(f.readline())
 arr = [int(x) for x in f.readlines()]
-
-maxx = 10*10**-20
-memory = 0
-
-m7 = max(list(filter(lambda x: (x % 7 == 0) and (x % 2 != 0), arr)))
-m2 = max(list(filter(lambda x: (x % 2 == 0) and (x % 7 != 0), arr)))
-m14 = max(list(filter(lambda x: x % 14 == 0, arr)))
-MAX = max(arr)
-
-print(m7 * m2, m14 * MAX)
+k = 14
+maxx = float("-inf")
+for i in range(len(arr)):
+    for j in range(i + 1, len(arr)):
+        a = arr[i]
+        b = arr[j]
+        if (a*b) % k == 0:
+            maxx = max(a*b, maxx)
+print(maxx)
