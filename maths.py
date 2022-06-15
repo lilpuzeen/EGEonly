@@ -14,5 +14,3 @@ for i in range(201455, 201470+1):
 	arr = div(i)
 	if len(arr) == 4:
 		print(*arr)
-s = "101101"
-s = s.removeprefix()
