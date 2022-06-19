@@ -1,4 +1,4 @@
-f = open("27891(B).txt")
+f = open("27891(A).txt")
 n = int(f.readline())
 arr = [int(x) for x in f.readlines()]
 k = 14
