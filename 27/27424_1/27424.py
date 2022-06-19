@@ -13,4 +13,5 @@ deltas = set()
 for j in range(n):
     b = arr[j]
     deltas.add(max(b) - min(b))
-print(sorted(deltas)[:10])
+m = list(filter(lambda x: x % 3 != 0, sorted(deltas)))
+print(m[:10])
