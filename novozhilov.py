@@ -3,7 +3,7 @@ from itertools import permutations
 
 words = list(permutations("КЛАБХАУС"))
 count = 0
-bad = False
+bad = True
 
 for word in words:
 	for i in range(len(word) - 1):
@@ -13,8 +13,6 @@ for word in words:
 			bad = True
 			break
 	else:
-		if bad:
-			count += 1
-			bad = False
+		count += 1
 
 print(count)
